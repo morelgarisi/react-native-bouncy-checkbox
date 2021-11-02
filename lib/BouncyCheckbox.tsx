@@ -103,9 +103,8 @@ class BouncyCheckbox extends React.Component<IBouncyCheckboxProps, IState> {
 
     const checkStatus = disableBuiltInState ? isChecked! : checked;
     return (
-      <Animated.View
+      <View
         style={[
-          { transform: [{ scale: springValue }] },
           _iconContainer(size, checkStatus, fillColor, unfillColor),
           iconStyle,
         ]}
@@ -117,7 +116,7 @@ class BouncyCheckbox extends React.Component<IBouncyCheckboxProps, IState> {
               style={[styles.iconImageStyle, iconImageStyle]}
             />
           ))}
-      </Animated.View>
+      </View>
     );
   };
 
